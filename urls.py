@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from web.views import index
+from web.views import index, demo
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -17,4 +17,6 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
     #url(r'^index/$', index),
     url(r'^$', index),
+    # show demo
+    url(r'^demo$', demo),
 )
