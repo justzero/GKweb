@@ -27,3 +27,7 @@ pip-log.txt
 .mr.developer.cfg
 manage.py
 django.pid
+*.log
+*.pot
+*.pyc
+local_settings.py
