@@ -4043,9 +4043,9 @@ hr.small {
   border-top-color: #ccc; }
 
 footer {
-  padding: 40px 0;
+  padding: 0;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0px;
   color: #777; }
   footer p {
     font-size: 14px;
@@ -4491,7 +4491,7 @@ section {
     margin-right: 0; }
 .home-new .home-discover {
   background: whitesmoke;
-  padding: 40px 0 80px 0;
+  padding: 40px 0 0px 0;
   background-image: -webkit-radial-gradient(center center, circle contain, rgba(255, 255, 255, 0.8) 100%, whitesmoke 100%);
   background-color: white;
   background-image: -moz-linear-gradient(#eeeeee, white);
@@ -5528,8 +5528,6 @@ section {
         color: #777;
         font-size: 13px; }
       .list-widget ul li .list-view {
-        margin: 10px 0 0 30px;
-        padding-top: 10px;
         color: #dd390d; }
 
 /*!

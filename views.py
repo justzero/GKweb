@@ -12,4 +12,4 @@ def index(request):
 def demo(request):
     """render template for index.html"""
     tmpl = 'page/demo.htm'
-    return render_to_response(tmpl, {})
+    return render_to_response(tmpl, {'lists': range(6)})

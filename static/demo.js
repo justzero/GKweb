@@ -169,7 +169,7 @@
 
 !function(a) {
     a(function() {
-        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|MSIE/i.test(navigator.userAgent))
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))
             a('a[data-link="modal"]').on('click', function(b) {
                 var c = a(this), d, e = a(c.attr('data-target') || (d = c.attr('href')) && d.replace(/.*(?=#[^\s]+$)/, '')), f = e.data('modal') ? 'toggle' : a.extend({}, e.data(), c.data());
                 b.preventDefault();

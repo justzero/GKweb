@@ -1,0 +1,35 @@
+<!--
+   -@describe:工可网 Banner
+   -@author: ice_G
+-->
+<!--{{{ sign up && login-->
+<!--login modal-->
+<div class="modal hide fade" id="login-modal">
+    <a class="close" data-dismiss="modal">×</a>
+    <h1>Log in to GKWeb</h1>
+    <form action="/login" method="POST" autocomplete="off"><div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="9137ohtZRmxHpPrEwSpiFjICO8rEyLSM"></div>
+        <fieldset>
+            <input type="text" placeholder="Username or email" name="username" maxlength="30" id="id_username">
+            <input type="password" placeholder="Password" name="password" id="id_password">
+            <input type="submit" value="Log in" class="btn">
+        </fieldset>
+        <a href="/accounts/password/reset/"><span>Forgot password?</span></a> · <a href="/signup/"><span>Sign up to GKWeb</span></a>
+    </form>
+</div>
+
+<!--signup modal-->
+<div class="modal hide fade" id="signup-modal">
+    <a class="close" data-dismiss="modal">×</a>
+    <h1>Sign up for GKWeb</h1>
+    <form action="/signup" method="POST" autocomplete="off"><div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="9137ohtZRmxHpPrEwSpiFjICO8rEyLSM"></div>
+        <input type="hidden" name="next" value="/welcome/">
+        <fieldset>
+            <input type="text" placeholder="Username" name="username" maxlength="30" id="id_username">
+            <input type="email" placeholder="Email" name="email" maxlength="75" id="id_email"><div class="email_suggestion"></div>
+            <input type="password" placeholder="Password" name="password" id="id_password">
+            <input type="submit" value="Sign Up" class="btn">
+        </fieldset>
+        <a href="/login/"><span>Already have an account?</span> Log in</a>
+    </form>
+</div>
+<!-- \sign up && login  }}} -->

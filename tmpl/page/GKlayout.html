@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include "modules/head.info" %}
+
+<body class="home home-new  logged-out ">
+
+    {% block nav %}
+    {% endblock %}
+
+    <article class="container">
+    <div id="landing">
+        {% block container %}
+        {% endblock %}
+    </div>
+    </article>
+
+{% block footer %}
+{% endblock %}
+
+</body>
+</html>
