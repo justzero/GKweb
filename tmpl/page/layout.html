@@ -1,20 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>JustZero's Web House</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>JustZero's Web House</title>
+        <script type="text/javascript" charset="utf-8" src="{{static}}/script/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="{{static}}/script/angular.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="{{static}}/script/main.js"></script>
+    </head>
+    <body ng-app="ACE">
 
-    {% include "modules/top.html" %}
+        {% include "modules/top.html" %}
 
-    {% block content %}
-    <div id="div">
-        this is a content div!
-    </div>
-    {% endblock %}
+        {% block content %}
+        <div id="div">
+            this is a content div!
+        </div>
+        {% endblock %}
 
-    {% include "modules/footer.html" %}
+        {% include "modules/footer.html" %}
 
-</body>
+    </body>
 </html>

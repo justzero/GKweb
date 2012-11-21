@@ -3,6 +3,11 @@
 {% block content %}
 <div class="bd">
     rewrite content block!
+    <hr />
+    Enter your name:
+    <input type="text" name="name" ng-model="name" value="">
+    <br />
+    hello <[name || 'world']> !
 </div>
 test
 {% endblock %}

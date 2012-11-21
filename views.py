@@ -6,7 +6,10 @@ def index(request):
     """render template for index.html"""
     tmpl = 'page/index.html'
     now = datetime.datetime.now()
-    data = { 'time': now }
+    data = {
+            'time': now, 
+            'static': './static'
+            }
     return render_to_response(tmpl, data)
 
 def demo(request):
